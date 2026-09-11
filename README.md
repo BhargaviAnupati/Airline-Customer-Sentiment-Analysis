@@ -2,14 +2,28 @@
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+![Status](https://img.shields.io/badge/Status-Core%20Analysis%20Complete-brightgreen)
 
 Classifying sentiment in ~14,600 tweets about US airlines, and diagnosing what specifically
 drives negative sentiment.
 
 **Author:** [Bhargavi Anupati](https://github.com/BhargaviAnupati) · [LinkedIn](https://www.linkedin.com/in/bhargavi-r-9667b4231/)
 
+## Results at a Glance
+
+**Logistic Regression on TF-IDF features achieved 0.706 macro F1**, outperforming both Naive
+Bayes and XGBoost — the simplest model held its own, echoing a pattern also seen in this
+portfolio's diabetes risk project. US Airways had the worst sentiment (77.7% negative tweets)
+and Customer Service Issue was the single largest driver of complaints across nearly every
+airline.
+
+| Word clouds by sentiment | Top predictive words per class |
+|---|---|
+| ![Sentiment word clouds](reports/sentiment_wordclouds.png) | ![Top predictive words](reports/top_predictive_words.png) |
+
+
 ## Table of Contents
+- [Results at a Glance](#results-at-a-glance)
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
 - [Methods](#methods)
@@ -185,4 +199,4 @@ wasn't given explicit imbalance handling in this pass (a natural next step would
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
